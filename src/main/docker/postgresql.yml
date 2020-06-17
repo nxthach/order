@@ -1,0 +1,11 @@
+version: '2'
+services:
+  order-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/order/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=order
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
