@@ -1,0 +1,15 @@
+entity Orders {
+	customerName String,
+    orderDate LocalDate,
+    status String
+}
+
+entity OrderDetails {
+	productId Long,
+    unitPrice BigDecimal,
+    quantity Integer
+}
+
+relationship OneToMany {
+	Orders to OrderDetails{orders}
+}

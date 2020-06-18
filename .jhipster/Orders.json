@@ -1,0 +1,37 @@
+{
+    "name": "Orders",
+    "fields": [
+        {
+            "fieldName": "customerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "orderDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "orderDetails",
+            "otherEntityRelationshipName": "orders",
+            "relationshipName": "orderDetails"
+        }
+    ],
+    "changelogDate": "20200617031700",
+    "entityTableName": "orders",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "order",
+    "applications": "*",
+    "microserviceName": "order"
+}

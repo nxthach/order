@@ -1,0 +1,38 @@
+{
+    "name": "OrderDetails",
+    "fields": [
+        {
+            "fieldName": "productId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "unitPrice",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "quantity",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "orders",
+            "otherEntityRelationshipName": "orderDetails",
+            "relationshipName": "orders",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200617031800",
+    "entityTableName": "order_details",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "order",
+    "applications": "*",
+    "microserviceName": "order"
+}
